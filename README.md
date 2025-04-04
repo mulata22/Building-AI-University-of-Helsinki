@@ -1,79 +1,74 @@
+# Herbal AI: Intelligent Herbal Detection
 <!-- This is the markdown template for the final project of the Building AI course, 
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Painting with AI
 
 Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+SmartHerbal AI is an intelligent solution designed to detect crop herbals early using image recognition and machine learning, empowering farmers with timely insights to take preventive action and increase yield.
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Crop disease is a major cause of agricultural loss globally. Many farmers, especially in rural or underserved areas, lack access to agricultural experts who can diagnose plant diseases. Early detection is critical, but current methods are either manual or inaccessible to smallholder farmers.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+This project aims to:
+
+Reduce crop losses by detecting diseases early
+Empower smallholder farmers with AI-assisted decision making
+Improve food security in regions dependent on agriculture
+My personal motivation comes from growing up in a farming community and seeing first-hand the losses due to undiagnosed plant issues. Making AI accessible to farmers can significantly improve livelihoods.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+Farmers can take a photo of the affected plant using a mobile app or upload it to a web portal. The AI model analyzes the image, detects the presence and type of disease, and provides:
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+Diagnosis of the issue
+Confidence score
+Suggested actions or treatments
+Users: Farmers, agricultural extension officers, NGOs, and agri-tech companies.
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
+Environment: Rural/remote areas with limited access to agronomists but with smartphones or internet cafés.
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
+Data sources:
+
+PlantVillage dataset (public dataset of labeled crop disease images)
+Local agricultural extension data (if available)
+Crowdsourced farmer image submissions
+AI methods:
+
+Convolutional Neural Networks (CNNs) for image classification
+TensorFlow/Keras or PyTorch frameworks
+Mobile optimization using TensorFlow Lite
 [Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
+| Component      | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Dataset      | PlantVillage, custom annotated images       |
+| AI Framework   | TensorFlow, Keras        |
+| Model Architecture      | CNN with image preprocessing       |
+| Output   | Disease label + confidence score        |
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
-
+Limited internet access may hinder image upload from remote areas
+Model accuracy may vary with image quality or unusual crop conditions
+Not a replacement for expert diagnosis in rare or complex cases
+Ethical concern: misuse of data, ensuring farmer data privacy
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+Improve model accuracy by including more localized disease images
+Add multilingual support for app instructions and diagnosis
+Partner with agriculture NGOs for deployment and farmer training
+Develop an offline model version for areas with no internet
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
+* Inspired by various real-world applications such as Plantix and Nuru AI
+Thanks to Reaktor & University of Helsinki for the Building AI course
   <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
